@@ -1,0 +1,24 @@
+<div class="sidenav container-fluid">
+    <div style="padding-left: 10px;">
+        <span style="font-size: 40px;">WHO Suicide Statistics</span>
+    </div>
+    <hr align="left">
+    <div style="padding-left: 10px;">
+        <div class="text-center">
+            <span style="font-size: 30px;font-weight: 40;">General Information </span>
+            <br />
+            <span style="font-size: 20px;">Representation of the number of suicides in various countries, based on a dataset constructed by WHO.</span>
+        </div>
+        <br />
+    </div>
+    <hr align="left">
+    <div class="">
+        <span style="font-size: 25px;font-weight: 40;">Year: </span>
+        <span style="font-size: 35px;"><span ng-model="start">[{start}]</span></span>
+        <input class="btn btn-sm" type="button" ng-click="toggleLoop()" id="loopBtn" value="Stop Loop" style="float: right; margin-top:15px;"></input>
+    </div>
+        <br />
+    <div class="">
+        {{> timeline}}
+    </div>
+</div>
